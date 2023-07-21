@@ -118,11 +118,10 @@ for memory in np.sort(df["MEMORY"].unique()):
 
 df = a1
 df.set_index("etmcode",inplace=True)
-#df.drop(["COLOR","MEMORY"],axis=1,inplace=True)
 print(df)
 
-#file_name = "final_sorted.xlsx"
-#df.to_excel(file_name)
+file_name = "final_sorted.xlsx"
+df.to_excel(file_name)
 
 
 
